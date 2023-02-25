@@ -17,4 +17,20 @@ print(dic)
 
 # Recuperar un valor indicando una llave
 print(dic['Nombre'])
-#
+# Si no encuentra la llave lanza una excepcion
+# print(dic['nombre'])
+# Método get recupera una llave, y si no existe No lanza excepción
+#además podemos regresar un valor en caso de que no exista la llave
+print(dic.get('Nombre', 'No se encontrço la llave'))
+print(dic)
+
+#  setdefault si modifica el diccionario, adeás se puede agregar un valor por default
+nombre = dic.setdefault('Nombres', 'Valor por default')
+print(nombre)
+print(dic)
+
+
+# IMprimir con pprint
+from pprint import pprint as pp
+# help(pp)
+print(pp(dic, sort_dicts=False))
