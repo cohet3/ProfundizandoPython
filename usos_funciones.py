@@ -20,7 +20,7 @@ def operacion(a,b, sumar_arg):
 operacion(4,5, sumar)
 
 # 3. Podemos retornar una función
-def retornar_funcion:
+def retornar_funcion():
     return sumar
 mi_funcion_retornada = retornar_funcion()
 print(f' Resultado función retornada: {mi_funcion_retornada(5,7)}')
