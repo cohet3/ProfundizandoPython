@@ -7,10 +7,10 @@ result.text
 content = result.text
 
 soup = BeautifulSoup(content, 'lxml')
-# print(soup.prettify())
+print(soup.prettify())
 
-box = soup.findall('data', testid="bookmark")
-targeta = box.find('data').get_text()
+box = soup.findall('a', class_="script")
+targeta = box.find('div').get_text()
 print(targeta)
 # transcript = box.find('div', class_='full-script').get_text(strip=True, separator=' ')
 #
